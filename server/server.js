@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const placeRoutes = require('./routes/places');
 const app = express();
+app.use(bodyParser.json()); //To access the request body if the call has request body data
 // app.use((req, res, next) => {
 // console.log("called");
 // res.send("dfadfa");
